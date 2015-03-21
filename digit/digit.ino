@@ -70,7 +70,7 @@ void displayDigit(int digit) {
 
   clear();
   while(keep) {
-    led = segments[offset]-48  ;
+    led = segments[offset]-48  ; // convert from char "0" to int 0
     digitalWrite(led, HIGH);    
     delayMicroseconds(periodHigh);                            
     digitalWrite(led, LOW);    
